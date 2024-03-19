@@ -18,22 +18,36 @@
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav ms-auto ">
           <li class="nav-item">
-            <a class="nav-link link-light" aria-current="page" href="#">Home</a>
+            <a class="nav-link link-light" aria-current="page" href="javscript;" @click.prevent="goTo('#about')">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-light" href="#about">About</a>
+            <a class="nav-link link-light" href="javscript;" @click.prevent="goTo('#about')">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-light" href="#project">project</a>
+            <a class="nav-link link-light" href="javscript;" @click.prevent="goTo('#project')">project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-light" href="#skill">skill</a>
+            <a class="nav-link link-light" href="javscript;" @click.prevent="goTo('#skill')">skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-light" href="#contact">contact</a>
+            <a class="nav-link link-light" href="javscript;" @click.prevent="goTo('#contact')">contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
+
+<script setup type="ts">
+
+
+
+function goTo(id){
+
+const tag = document.querySelector(id);
+
+  tag.scrollIntoView();
+
+
+}
+</script>

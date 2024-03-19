@@ -2,7 +2,7 @@
 <div id="project"></div>
 <h2 class="mb-5">我的作品</h2>
   <div class="row row-cols-md-2 row-cols-lg-3 gy-2 gy-md-3 gx-3">
-    <div   v-for="Project in ProjectList" :key="Project.title">
+    <div   v-for="Project in ProjectList" :key="Project.title" class="mb-3 mx-md-2">
       <div class="h-100">
         <div class="card text-center h-100" >
           <img :src="Project.src" class="card-img-top" :alt="Project.title" style="height: 40%;"/>
